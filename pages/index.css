@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: "Inter", Arial, sans-serif, "Noto Serif", Times New Roman, serif;
 }
 
@@ -11,11 +11,87 @@ body {
   line-height: 20px;
 }
 
+.header {
+  background-image: url("../images/background_header.svg");
+  display: flex;
+  flex-direction: column;
+  /*
+  padding-top: 30px;
+  pagging-bottom: 40px;
+   */
+}
+
 .nav {
   display: flex;
+  justify-content: space-between;
+  padding: 30px 80px 0 30px;
 }
 
 .nav__logo {
   width: 105px;
   height: 39px;
+}
+
+.nav__links {
+  display: flex;
+  column-gap: 20px;
+  list-style-type: none;
+}
+
+.nav__link {
+  /* Preciso repetir o font-family?
+  font-family: "Inter", Arial, sans-serif; */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header__content {
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.header__title {
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  max-width: 709px;
+  margin: 183px 0 0 80px;
+}
+
+.span-accent {
+  display: block;
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+
+.header__description {
+  font-family: "Noto Serif";
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 28px;
+  margin-left: 80px;
+}
+
+.header__image {
+  width: 646px;
+  height: 568px;
+  margin: 124px 5px 0 0;
+  position: absolute;
+  bottom: 124px;
+  right: 5px;
+}
+
+.header__footer {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
 }

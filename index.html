@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee & Code</title>
-    <meta name="description" content="Página web de uma cafeteria para estudantes de desenvolvimento web." />
+    <meta
+      name="description"
+      content="Página web de uma cafeteria para estudantes de desenvolvimento web."
+    />
     <meta name="author" content="Luna Costa" />
-    <meta name="keywords" content="café, receitas, biblioteca, desenvolvedores, estudantes" />
+    <meta
+      name="keywords"
+      content="café, receitas, biblioteca, desenvolvedores, estudantes"
+    />
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -18,13 +24,14 @@
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
 
-  <body>
+  <body class="body">
     <div class="page">
       <header class="header">
         <nav class="nav">
-          <img src="./images/logo_coffeeshop_dark.svg"
-          alt="Logotipo do café da Biblioteca Triple Peaks"
-          class="nav__logo"
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logotipo do café da Biblioteca Triple Peaks"
+            class="nav__logo"
           />
           <ul class="nav__links">
             <li>
@@ -38,7 +45,35 @@
             </li>
           </ul>
         </nav>
+        <div class="header__content">
+          <div>
+            <h1 class="header__title">
+              <span class="span-accent">Café especial</span>
+              na biblioteca Triple Peaks
+            </h1>
+            <p class="header__description">
+              Esta é nossa zona de estudo! Temos aquele cafezinho para
+              energizar<br />
+              você e vibrações aconchegantes para soltar a criatividade.
+            </p>
+          </div>
+          <img
+            src="./images/inside_coffee_shop.png"
+            alt="Ilustração 'Dentro da cafeteria'"
+            class="header__image"
+          />
+        </div>
+        <div class="header__footer">
+          <p class="header__hours">
+            Horários: Segunda a sexta (10:00 – 19:00) <br />
+            Sábado a domingo (11:00 - 18:00)
+          </p>
+          <p class="header__address">
+            200 Success Avenue, a cidade de Triple Peaks
+          </p>
+        </div>
       </header>
+
       <main class="content">
         <section class="recipes"></section>
         <section class="reservation"></section>
