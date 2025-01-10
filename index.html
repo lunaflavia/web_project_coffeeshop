@@ -38,32 +38,27 @@
               <a class="nav__link" href="#recipes">Receitas</a>
             </li>
             <li>
-              <a class="nav__link" href="#reservations">Reservar uma mesa</a>
+              <a class="nav__link" href="#reservation">Reservar uma mesa</a>
             </li>
             <li>
-              <a class="nav__link" href="#contacts">Contatos</a>
+              <a class="nav__link" href="#footer">Contatos</a>
             </li>
           </ul>
         </nav>
 
-        <div class="header__content">
-          <div>
-            <h1 class="header__title">
-              <span class="span-accent">Café especial</span>
-              na biblioteca Triple Peaks
-            </h1>
-            <p class="header__description">
-              Esta é nossa zona de estudo! Temos aquele cafezinho para
-              energizar<br />
-              você e vibrações aconchegantes para soltar a criatividade.
-            </p>
-          </div>
-          <img
-            src="./images/inside_coffee_shop.png"
-            alt="Ilustração 'Dentro da cafeteria'"
-            class="header__image"
-          />
-        </div>
+        <h1 class="header__title">
+          <span class="header__span-accent">Café especial</span>
+          na biblioteca Triple Peaks
+        </h1>
+        <p class="header__description">
+          Esta é nossa zona de estudo! Temos aquele cafezinho para energizar<br />
+          você e vibrações aconchegantes para soltar a criatividade.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Ilustração 'Dentro da cafeteria'"
+          class="header__image"
+        />
 
         <div class="header__footer">
           <p class="header__footer header__footer_content_hours">
@@ -77,7 +72,7 @@
       </header>
 
       <main class="content">
-        <section class="recipes">
+        <section class="recipes" id="recipes">
           <div>
             <h2 class="recipes__title">Receitas</h2>
             <p class="recipes__subtitle">
@@ -95,7 +90,10 @@
                 allowfullscreen
                 class="recipes__iframe"
               ></iframe>
-              <p class="recipes__video-caption">Receita Aeropress ~5 min</p>
+              <div class="recipes__video-captions">
+                <p class="recipes__video-caption">Receita Aeropress</p>
+                <p class="recipes__video-caption">~5 min</p>
+              </div>
             </div>
             <div class="recipes__video-item">
               <iframe
@@ -106,16 +104,17 @@
                 allowfullscreen
                 class="recipes__iframe"
               ></iframe>
-              <p class="recipes__video-caption">
-                Receita de Prensa Francesa ~15 min
-              </p>
+              <div class="recipes__video-captions">
+                <p class="recipes__video-caption">Receita de Prensa Francesa</p>
+                <p class="recipes__video-caption">~15 min</p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="reservation"></section>
+        <section class="reservation" id="reservation"></section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer" id="footer"></footer>
     </div>
   </body>
 </html>
